@@ -1,0 +1,123 @@
+    root{
+        --bright-orange: hsl(31, 77%, 52%);
+        --dark-cyan: hsl(184, 100%, 22%);
+        --Very-dark-cyan: hsl(179, 100%, 13%);
+    }
+    
+    
+    
+    
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    body{
+        font-family: 'Lexend Deca', sans-serif;
+        font-size:15px;
+    }
+
+    h1{
+        font-family: 'Big Shoulders Display', cursive;
+        text-transform: uppercase;
+    }
+
+    .container{
+        padding:20px;
+    }
+
+    .card{
+        padding:30px;
+    }
+
+    .card img{
+        margin-bottom: 30px;
+    }
+
+    .card h1{
+        margin-bottom: 20px;
+    }
+
+    .card p{
+        font-size: 15px;
+        padding-bottom: 30px;
+        line-height:1.6;
+    }
+
+    .btn{
+        border-radius: 30px ;
+        border:2px solid white;
+        padding: 10px 20px;
+        background-color: white;
+        transition: all 0.4s ease-in-out
+    }
+
+
+    .bright-orange{
+        background-color:hsl(31, 77%, 52%);
+        color:white;
+        border-radius:10px 10px 0 0;
+    }
+    .bright-orange .btn{
+        color:hsl(31, 77%, 52%)
+    }
+
+
+    .dark-cyan{
+        background-color:hsl(184, 100%, 22%);
+        color:white
+    }
+    .dark-cyan .btn{
+        color:hsl(184, 100%, 22%)
+    }
+
+
+    .Very-dark-cyan{
+        background-color:hsl(179, 100%, 13%);
+        color:white;
+        border-radius:0 0 10px 10px;
+    }
+    .Very-dark-cyan .btn{
+        color:hsl(179, 100%, 13%)
+    }
+
+    .btn:Hover{
+        background-color: transparent;
+        color: white;
+    }
+
+    @media(min-width:992px){
+        .container{
+            display:flex;
+            align-items:center;
+            justify-content: center;
+            min-height:100vh;
+            max-width:1440px;
+            margin:auto;
+        }
+        .bright-orange{
+            border-radius: 10px 0 0 10px;
+        }
+
+        .Very-dark-cyan{
+            border-radius: 0 10px 10px 0px;
+        }
+
+        .card{
+            padding: 40px;
+        }
+    }
+
+    @media(min-width: 1280px){
+        .container{
+            max-width:1440px;
+        }
+
+    .card p{
+        margin-bottom: 40px;
+    }
+    } 
